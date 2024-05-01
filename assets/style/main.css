@@ -950,14 +950,14 @@ h4.title {
     color: #333;
 }
 
-/* 費用表 */
+/* 費用表*/
 .fee__table {
     margin: 0 auto;
     border-collapse: collapse;
-    border: 2px #777 solid;
+    border: 0.1875rem #ccc solid;
     width: calc(100% - 2rem);
     text-align: center;
-    font-size: 16px;
+    font-size: 1rem;
 }
 @media (min-width: 768px) {
     .fee__table {
@@ -969,15 +969,19 @@ h4.title {
 /* 表タイトル行 */
 .fee__table th,
 .fee__table td {
-    border: .08rem #777 solid;
+    border: 0.1rem #ccc solid;
 }
 .fee__table th {
-    background: #f0f0f0;
-    padding: 19px 1.0625rem;
+    background: #F5F5F5;
+    padding: 1.1875rem 1.0625rem;
     font-weight: 400;
 }
 .fee__table td {
-    padding: 7px 0 ;
+    padding: 0.4375rem 0 ;
+}
+
+.fee__table_left {
+    width: 7.25rem;
 }
 
 @media (min-width: 768px) {
@@ -992,7 +996,6 @@ h4.title {
         width: 9.0625rem;
     }
 }
-
     .fee__table td {
         background-color: #fff;
     }
