@@ -380,7 +380,6 @@ h4.title {
     top: 0;
     width: 100%;
     padding-top: 2rem;
-    /* padding-left: 1rem; */
 }
 
 @media (min-width: 768px) {
@@ -393,6 +392,7 @@ h4.title {
 @media (min-width: 1100px) {
     .mainvisual__container {
         width: 57%;
+        padding-left: 0;
     }
 }
 
@@ -448,7 +448,6 @@ h4.title {
     font-size: 0.6875rem;
     font-weight: 700;
     color: #333;
-    /* line-height: 2; */
     margin-bottom: .3rem;
 }
 .mainvisual__contents_logo_catch_bottom {
@@ -480,26 +479,23 @@ h4.title {
 .mainvisual__title_top {
     color: #333;
     font-size: 14px;
+    font-weight: 400;
 }
 .mainvisual__title_bottom {
     font-weight: 900;
     line-height: 1.5;
     letter-spacing: .1rem;
+}
 
-}
-@media (min-width: 768px) {
-    .mainvisual__title_bottom {
-        font-size: 25px;
-        font-weight: 900;
-        line-height: 1.44;
-    }
-}
 @media (min-width: 768px) {
     .mainvisual__title_top {
         font-size: 2.0625rem;
     }
     .mainvisual__title_bottom {
         font-size: 3.75rem;
+        font-weight: 900;
+        line-height: 1.44;
+        letter-spacing: 0;
     }
 }
 
@@ -530,7 +526,7 @@ h4.title {
         display: flex;
         justify-content: space-around;
         padding-top: 0;
-        margin: 0 2rem 0;
+        margin: 0 0.7rem 0;
     }
 }
 @media (min-width: 768px) {
