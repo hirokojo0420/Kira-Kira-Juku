@@ -367,7 +367,6 @@ h4.title {
 }
 @media (min-width: 768px) {
     .mainvisual__cover {
-        /* position: relative; */
         width: 100%;
         background-color: #fff;
         height: 40.6875rem;
@@ -440,7 +439,7 @@ h4.title {
     .mainvisual__contents_logo-left,
     .mainvisual__contents_logo-right {
         width: 52.6px;
-        height: 150px;
+        height: 9.375rem;
     }
 }
 
@@ -478,13 +477,13 @@ h4.title {
 }
 .mainvisual__title_top {
     color: #333;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 400;
 }
 .mainvisual__title_bottom {
+    font-size: 1.5625rem;
     font-weight: 900;
     line-height: 1.5;
-    letter-spacing: .1rem;
 }
 
 @media (min-width: 768px) {
@@ -493,7 +492,6 @@ h4.title {
     }
     .mainvisual__title_bottom {
         font-size: 3.75rem;
-        font-weight: 900;
         line-height: 1.44;
         letter-spacing: 0;
     }
@@ -564,18 +562,16 @@ h4.title {
 }
 @media (min-width: 768px) {
     .reason__title .title {
-        font-size: 2rem;
-        letter-spacing: .25rem;
+        font-size: 2.25rem;
     }
     .reason__title span {
-        font-size: 3rem;
+        font-size: 3.375rem;
     }
 }
 
 /* リスト */
 @media (min-width: 768px) {
     .reason__list__wrapper {
-        /* max-width: 100vw; */
         margin: 0 auto 4rem;
         text-align: center;
     }
