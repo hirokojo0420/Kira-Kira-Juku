@@ -792,14 +792,12 @@ h4.title {
         width: 100%;
         max-width: 1160px;
         margin: 0 auto;
+        border-radius: 0.75rem 0.75rem 0px 0px ;
+        font-size: 1.5rem;
+        font-weight: 700;
     }
 }
 
-@media (min-width: 768px) {
-    .st-theme-basic>.nav .nav-link {
-        border-radius: 0.75rem 0.75rem 0px 0px ;
-    }
-}
 /* 選択中タブ */
 .st-theme-basic>.nav .nav-link.active {
     background-color: #F2F9FF;
@@ -1090,8 +1088,15 @@ h4.title {
     background-color: #DDD;
     color: #333;
     height: 5.125rem;
-    padding: 2rem 1rem;
+    line-height: 5.125rem;
     text-align: center;
+    align-content: center;
+}
+.footer__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 @media (min-width: 768px) {
