@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* ベースのスタイル
------------------------------------------- */
+------------------------------------------*/
 body {
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: 400;
@@ -739,7 +739,7 @@ h4.title {
     flex-direction: row!important;
     flex: 1 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
 }
 
 /* タブ周りの線を削除 */
@@ -847,7 +847,8 @@ h4.title {
     row-gap: 1.4rem;
 }
 .tab.st-theme-basic > .tab-content > .tab-pane {
-        padding: 0 !important;
+        padding: 27px 0 0 !important;
+        /* margin-bottom: 10rem; */
 }
 
 @media (min-width: 768px) {
@@ -866,21 +867,16 @@ h4.title {
 }
 
 .course__list__item:first-child {
-    padding-top: 2rem;
+    /* padding-top: 1rem; */
 }
 
-.course__list__item {
-    padding-top: 0;
-    margin-top: 0;
-    margin-bottom: 1.5rem;
-}
-.course__list__item:last-child {
-    margin-bottom: 0;
-}
+
 
 .course__list__item a {
-    display: block;
-    overflow: hidden;
+    outline: 1px solid #333;
+}
+.course__list__item a img {
+    vertical-align: bottom;
 }
 
 @media (min-width: 768px) {
@@ -897,26 +893,48 @@ h4.title {
     }
 
     .course__list__item:last-child {
-        padding-bottom: 10px;
+        /* padding-bottom: 10px; */
     }
+    .course__list__item a {
+        display: block;
+        overflow: hidden;
+        border-radius: .5rem;
+        
+    } 
 
-    .course__list__item>a:hover {
+    .course__list__item>a img:hover {
             transform: scale(1.2);
             opacity: 0.6;
     }
 }
 
-.course__list__item__img img {
+.course__list__item__img a {
     padding-bottom: 0.55rem;
 }
 
 .course__list__item__contents__title {
     font-size: 1.25rem;
+    line-height: 1;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+course__list__item__contents__title i {
+    color: #005BAC;
+    font-size: 1.75rem;
+    vertical-align: bottom;
+    height: 1.5rem;
 }
 .course__list__item__contents__title i::before {
     color: #005BAC;
-    font-size: 1.625rem;
-    vertical-align: middle;
+    font-size: 1.75rem;
+    vertical-align: bottom;
+    height: 1.5rem;
+}
+@media (min-width: 768px) {
+    .course__list__item__contents__title {
+        margin-top: 1rem;
+    }
 }
 
 /* 費用
