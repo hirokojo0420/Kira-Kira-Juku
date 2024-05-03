@@ -738,9 +738,9 @@ h4.title {
 /* スマートタブ */
 .st>.nav {
     flex-direction: row!important;
-    flex: 1 auto;
-    display: flex;
-    justify-content: space-between; 
+    /* flex: 1 auto; */
+    /* display: flex; */
+    /* justify-content: space-between;  */
 }
 
 /* タブ周りの線を削除 */
@@ -755,7 +755,6 @@ h4.title {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 1.5rem;
 }
 
 @media (min-width: 768px) {
@@ -766,7 +765,6 @@ h4.title {
 }
 @media (max-width: 1160px) {
     .nav.course__tabTitle__wrapper {
-        width: 100%; /* タブの幅を100%に設定 */
         box-sizing: border-box; /* パディングとボーダーを含む全体の幅を100%に設定 */
     }
 }
@@ -812,8 +810,9 @@ h4.title {
 
 .st.st-justified>.nav .nav-link, .st.st-justified>.nav>li {
     width: 100%;
-    margin: 0 0.625rem 0 0;
+    width: calc(100% - 1rem);
 }
+
 @media (min-width: 768px) {
     .st.st-justified>.nav .nav-link, .st.st-justified>.nav>li {
         margin: 0;
@@ -831,7 +830,6 @@ h4.title {
 .course__list__item img {
     display: block;
     overflow:hidden;
-
 }
 
 .tab-content {
@@ -867,14 +865,12 @@ h4.title {
     overflow: hidden;
 }
 
-.course__list__item:first-child {
-    /* padding-top: 1rem; */
+.course__list__item + .course__list__item {
+    margin-top: 2rem;
 }
 
-
-
-.course__list__item a {
-    outline: 1px solid #333;
+.course__list__item:last-child {
+    margin-bottom: 3.75rem;
 }
 .course__list__item a img {
     vertical-align: bottom;
@@ -893,13 +889,10 @@ h4.title {
         padding-top: 0;
     }
 
-    .course__list__item:last-child {
-        /* padding-bottom: 10px; */
-    }
-    .course__list__item a {
+        .course__list__item a {
         display: block;
         overflow: hidden;
-        border-radius: .5rem;
+        border-radius: .6rem;
         
     } 
 
@@ -916,8 +909,7 @@ h4.title {
 .course__list__item__contents__title {
     font-size: 1.25rem;
     line-height: 1;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
+    margin-top: .8rem;
     text-align: left;
 }
 course__list__item__contents__title i {
@@ -925,12 +917,16 @@ course__list__item__contents__title i {
     font-size: 1.75rem;
     vertical-align: bottom;
     height: 1.5rem;
+    display: inline-block;
+    /* margin-left: -.5rem; */
 }
 .course__list__item__contents__title i::before {
     color: #005BAC;
     font-size: 1.75rem;
     vertical-align: bottom;
     height: 1.5rem;
+    display: inline-block;
+    margin-left: -.5rem;
 }
 @media (min-width: 768px) {
     .course__list__item__contents__title {
@@ -1049,11 +1045,11 @@ course__list__item__contents__title i {
         display: flex;
         align-items: center;
         justify-content: center;
+        overflow: hidden;
     }
 }
 .support__faq {
     background-image: url(../image/support/pht_faq_sp.jpg);
-    background-color: #0271E0;
 }
 .support__search {
     background-image: url(../image/support/pht_classrooms_sp.jpg);
