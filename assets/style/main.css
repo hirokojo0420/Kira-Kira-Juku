@@ -380,7 +380,12 @@ h4.title {
     width: 100%;
     padding-top: 2rem;
 }
-
+@media (min-width: 500px) {
+    .mainvisual__container {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
 @media (min-width: 768px) {
     .mainvisual__container {
         padding-top: 7rem;
@@ -761,12 +766,13 @@ h4.title {
 @media (min-width: 768px) {
     .nav.course__tabTitle__wrapper {
         width: 72.5rem;
-        max-width: 72.5rem;
+        max-width: 1160px;
     }
 }
 @media (max-width: 1160px) {
     .nav.course__tabTitle__wrapper {
-        box-sizing: border-box; /* パディングとボーダーを含む全体の幅を100%に設定 */
+        box-sizing: border-box; 
+        max-width: 100vw;
     }
 }
 /* 選択していないタブ..下のボックスシャドウを無効にする */
@@ -1052,7 +1058,6 @@ h4.title {
         display: flex;
         align-items: center;
         justify-content: center;
-        overflow: hidden;
     }
 }
 .support__faq {
