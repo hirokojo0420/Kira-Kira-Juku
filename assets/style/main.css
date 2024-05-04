@@ -696,6 +696,7 @@ h4.title {
 @media (min-width: 768px) {
     .entry__text {
         margin-bottom : 1rem;
+        letter-spacing: -.1rem;
     }
     .entry__text br {
         display: none;
@@ -726,7 +727,7 @@ h4.title {
 }
 @media (min-width: 768px) {
     .course__container {
-        margin-bottom: 5.5rem;
+        margin-bottom: 4.2rem;
     }
 }
 
@@ -814,9 +815,14 @@ h4.title {
 }
 
 @media (min-width: 768px) {
-    .st.st-justified>.nav .nav-link, .st.st-justified>.nav>li {
-        margin: 0;
-        width: 98%;
+    .st.st-justified>.nav .nav-link {
+        width: calc(100% - 1.5rem);
+    }
+    .st.st-justified>.nav .nav-link-left {
+        margin : 0 auto 0 0;
+    }
+    .st.st-justified>.nav .nav-link-right {
+        margin : 0 0 0 auto;
     }
 }
 
@@ -825,11 +831,10 @@ h4.title {
 .tab__content__wrapper {
     padding: 0 1rem;
     overflow:hidden;
-
 }
 .course__list__item img {
     display: block;
-    overflow:hidden;
+    overflow: hidden;
 }
 
 .tab-content {
@@ -838,7 +843,6 @@ h4.title {
     border-left: none;
     background-color: #F2F9FF;
     height: auto !important;
-    overflow:hidden;
 }
 
 .st>.tab-content>.tab-pane {
@@ -846,8 +850,7 @@ h4.title {
     row-gap: 1.4rem;
 }
 .tab.st-theme-basic > .tab-content > .tab-pane {
-        padding: 27px 0 0 !important;
-        /* margin-bottom: 10rem; */
+        padding: 1.6875rem 0 0 !important;
 }
 
 @media (min-width: 768px) {
@@ -856,8 +859,8 @@ h4.title {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
-        row-gap: 1rem;
-        margin-top: 2rem;
+        row-gap: 1.75rem;
+        padding-bottom: 1.75rem !important;
     }
 }
 
@@ -871,6 +874,8 @@ h4.title {
 
 .course__list__item:last-child {
     margin-bottom: 3.75rem;
+    padding-bottom: 0;
+
 }
 .course__list__item a img {
     vertical-align: bottom;
@@ -878,23 +883,26 @@ h4.title {
 
 @media (min-width: 768px) {
 
-    .course__list__item {
+    .tab-pane > .course__list__item {
+        margin-top: 1rem;
         width: 50%;
+        margin-top: 1rem;
         padding: 0 1rem;
         padding-bottom: 0;
         transition: opacity 0.3s ease;
         overflow: hidden;
     }
-    .course__list__item:first-child {
-        padding-top: 0;
-    }
+@media (min-width: 768px) {
+        .course__list__item:last-child {
+            margin-bottom: .5rem;
+        }
+}
 
-        .course__list__item a {
-        display: block;
-        overflow: hidden;
-        border-radius: .6rem;
-        
-    } 
+.course__list__item a {
+    display: block;
+    overflow: hidden;
+    border-radius: .6rem;
+} 
 
     .course__list__item>a img:hover {
             transform: scale(1.2);
@@ -912,14 +920,7 @@ h4.title {
     margin-top: .8rem;
     text-align: left;
 }
-course__list__item__contents__title i {
-    color: #005BAC;
-    font-size: 1.75rem;
-    vertical-align: bottom;
-    height: 1.5rem;
-    display: inline-block;
-    /* margin-left: -.5rem; */
-}
+
 .course__list__item__contents__title i::before {
     color: #005BAC;
     font-size: 1.75rem;
@@ -932,6 +933,13 @@ course__list__item__contents__title i {
     .course__list__item__contents__title {
         margin-top: 1rem;
     }
+    .course__list__item__contents__title i::before {
+        font-size: 2.25rem;
+        line-height: 1rem;
+        vertical-align: middle;
+
+
+    }
 }
 
 /* 費用
@@ -943,13 +951,12 @@ course__list__item__contents__title i {
 }
 @media (min-width: 768px) {
     .fee {
-        margin-bottom: 4.5rem;
+        margin-bottom: 4rem;
     }
 }
 /*費用タイトル*/
 .fee__title {
-    margin-top: 4rem;
-    margin-bottom: 1rem;
+    margin-top: 3.75rem;
     letter-spacing: 1rem;
     font-size: 1.75rem;
     color: #333;
@@ -957,7 +964,7 @@ course__list__item__contents__title i {
 
 /* 費用表*/
 .fee__table {
-    margin: 0 auto;
+    margin: 0.9375rem auto;
     border-collapse: collapse;
     border: 0.1875rem #ccc solid;
     width: calc(100% - 2rem);
@@ -967,7 +974,7 @@ course__list__item__contents__title i {
 @media (min-width: 768px) {
     .fee__table {
         width: 37.5rem;
-        font-size: 18px;
+        font-size: 1.125rem;
     }
 }
 
@@ -995,7 +1002,7 @@ course__list__item__contents__title i {
         font-size: 1.125rem;
     }
     .fee__table td {
-        padding: 0.625rem 0 ;
+        padding: .7rem 0 ;
     }
     .fee__table_left {
         width: 9.0625rem;
