@@ -101,9 +101,6 @@ ul {
         transition: transform 0.3s ease;
 
     }
-    .btn:hover {
-        opacity: .8;
-    }
 }
 .btn-white {
     color: #005BAC;
@@ -125,6 +122,21 @@ ul {
 }
 .btn-bluegreen {
     background-color: #3AC8AD;
+}
+
+@media (min-width: 768px) {
+    .btn-blue-gradient:hover {
+        background-image: linear-gradient(90deg, #64a0dc 0%, #c2daf3 100%);
+    }
+    .btn-green:hover {
+        background-color: #9cd66d;
+    }
+    .btn-orange:hover {
+        background-color: #f6be46;
+    }
+    .btn-bluegreen:hover {
+        background-color: #6dc9b8;
+    }
 }
 
 .title {
