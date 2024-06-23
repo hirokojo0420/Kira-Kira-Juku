@@ -113,7 +113,9 @@ ul {
 .btn-blue-gradient {
     background-image: linear-gradient(90deg, #0271E0 0%, #53A2F0 100%);
 }
-
+.btn-orange-gradient {
+    background-image: linear-gradient(90deg, #F6AA00 0%, #FAD37D 100%);
+}
 .btn-green {
     background-color: #77CB33;
 }
@@ -127,6 +129,9 @@ ul {
 @media (min-width: 768px) {
     .btn-blue-gradient:hover {
         background-image: linear-gradient(90deg, #64a0dc 0%, #c2daf3 100%);
+    }
+    .btn-orange-gradient:hover {
+        background-image: linear-gradient(90deg, #F8BE3E 0%, #FCE8BD 100%);
     }
     .btn-green:hover {
         background-color: #9cd66d;
@@ -691,45 +696,66 @@ h4.title {
     margin-top: .8rem;
 }
 
-/* エントリー
+/* CTA
 ------------------------------------------ */
-.entry {
+.cta {
     background: #FF55551A 0% 0% no-repeat padding-box;
     text-align: center;
 }
-.entry__container {
+.cta__container {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
 }
 @media (min-width: 768px) {
-    .entry__container {
+    .cta__container {
+        width: 60%;
+        max-width: 800px;
+        margin: 0 auto;
         padding-top: 3.5rem;
         padding-bottom: 3.5rem;
     }
 }
-.entry__text {
+.cta__text {
     margin-bottom : 0.5rem;
 }
 @media (min-width: 768px) {
-    .entry__text {
+    .cta__text {
         margin-bottom : 1rem;
         letter-spacing: -.1rem;
     }
-    .entry__text br {
+    .cta__text br {
         display: none;
     }
 }
-.entry__btn {
+
+.l-cta__btn-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+    gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .l-cta__btn-group {
+        flex-direction: row;
+        margin-top: 2rem;
+    }
+}
+
+.cta__btn {
     width: 19.0625rem;
     height: 4.3125rem;
     font-size: 1.25rem;
     line-height: 4.3125rem;
 }
 @media (min-width: 768px) {
-    .entry__btn {
+    .cta__btn {
         width: 22.5rem;
+        min-width: 18.75rem;
         height: 4.6875rem;
-        font-size: 24px;
+        font-size: 1.5rem;
         line-height: 4.6875rem;
     }
 }
@@ -1101,9 +1127,9 @@ h4.title {
     .support__search {
         background-size: cover;
         background-position: top;
-        width: 50%;
         height: 20rem;
         transition: opacity 0.3s ease;
+        width: 100%;
     }
 }
 @media (min-width: 768px){
