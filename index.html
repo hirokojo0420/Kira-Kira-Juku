@@ -1,330 +1,339 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>入学説明会のお申し込み開始 | Kira-Kira Juku</title>
-        <meta name="description" content="	難関大学の合格実績No.1のKira-Kira Jukuが、現役高校生・高卒生向け入学説明会の申し込みを開始しました。	">
-        <!-- OG -->
-        <meta property="og:site_name" content="Kira-Kira Juku">
-        <meta property="og:title" content="入学説明会のお申し込み開始 | Kira-Kira Juku">
-        <meta property="og:description" content="難関大学の合格実績No.1のKira-Kira Jukuが、現役高校生・高卒生向け入学説明会の申し込みを開始しました。">
-        <meta property="og:type" content="article">
-        <meta property="og:url" content="https://example.com">
-        <meta property="og:image" content="https://example.com/assets/image/ogp.jpg">
-        <!-- webフォント指定 -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Outfit:wght@100..900&display=swap"
-            rel="stylesheet">
-        <link
-            href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-            rel="stylesheet">
-        <!-- Bootstrap Icons -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>入学説明会のお申し込み開始 | Kira-Kira Juku</title>
+    <meta name="description" content="	難関大学の合格実績No.1のKira-Kira Jukuが、現役高校生・高卒生向け入学説明会の申し込みを開始しました。	">
+    <!-- OG -->
+    <meta property="og:site_name" content="Kira-Kira Juku">
+    <meta property="og:title" content="入学説明会のお申し込み開始 | Kira-Kira Juku">
+    <meta property="og:description" content="難関大学の合格実績No.1のKira-Kira Jukuが、現役高校生・高卒生向け入学説明会の申し込みを開始しました。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://example.com">
+    <meta property="og:image" content="https://example.com/assets/image/ogp.jpg">
+    <!-- webフォント指定 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Outfit:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
-        <!-- リセットCSS -->
-        <link rel="stylesheet" href="https://unpkg.com/ress@4.0.0/dist/ress.min.css">
-        <!-- Smart Tab CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/jquery-smarttab@4/dist/css/smart_tab_all.min.css" rel="stylesheet">
-        <!-- cssファイル指定 -->
-        <link rel="stylesheet" href="./assets/style/main.css">
-    </head>
+    <!-- リセットCSS -->
+    <link rel="stylesheet" href="https://unpkg.com/ress@4.0.0/dist/ress.min.css">
+    <!-- Smart Tab CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/jquery-smarttab@4/dist/css/smart_tab_all.min.css" rel="stylesheet">
+    <!-- cssファイル指定 -->
+    <link rel="stylesheet" href="./assets/style/main.css">
+</head>
 
-    <body>
-        <header id="header" class="header">
-            <div class="header__inner">
-                <div class="header__container">
-                    <h1 class="header__logo Poppins bold">
-                        <a href="/">Kira-Kira Juku</a>
-                    </h1>
-                    <!-- ハンバーガーボタン -->
-                    <button type="button" class="hamburger__button">
-                        <i class="bi bi-list"></i>
-                    </button>
-                    <!-- ナビゲーション、ヘッダーメニュー -->
-                    <nav class="hamburger__menu header__nav">
-                        <ul class="hamburger__menu__list__group header__nav__list__group">
-                            <li><a href="#reason"><i class="bi bi-arrow-right-short"></i>選ばれる3つの理由</a></li>
-                            <li><a href="#course"><i class="bi bi-arrow-right-short"></i>コース・目的</a></li>
-                            <li><a href="#fee"><i class="bi bi-arrow-right-short"></i>費&nbsp;用</a></li>
-                        </ul>
-                        <a href="/entry.html" class="btn entry__btn_hamburger btn-white">入学説明会に申し込む</a>
-                        <a href="/entry.html" class="btn entry__btn-nav btn-blue-gradient">入学説明会に申し込む</a>
-                    </nav>
-                </div>
-            </div>
-        </header>
-        <main>
-            <!-- メインビジュアル -->
-            <section class="mainvisual">
-                <!-- カバー画像 -->
-                <div class="mainvisual__cover">
-                    <!-- メインビジュアルのテキスト -->
-                    <div class="mainvisual__container">
-                        <!-- メインビジュアル内コンテンツ -->
-                        <div class="mainvisual__contents">
-                            <div class="mainvisual__contents_logo">
-                                <div class="mainvisual__contents_logo-left"></div>
-                                <div class="mainvisual__contents_logo_catch">
-                                    <div class="mainvisual__contents_logo_catch_top">難関大学の合格実績</div>
-                                    <div class="mainvisual__contents_logo_catch_bottom Poppins extrabold italic pink">
-                                        No.<span>1</span></div>
-                                </div>
-                                <div class="mainvisual__contents_logo-right"></div>
-                            </div>
-                            <div class="mainvisual__title">
-                                <h2 class="mainvisual__title_top">現役高校生・高卒生</h2>
-                                <p class="mainvisual__title_bottom">入学説明会の<br>お申し込み開始</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- ボタン３種 -->
-                <div class="main__bottom__btn__container container">
-                    <ul class="main__bottom__btn__list">
-                        <li><a href="/inquiry" class="main__bottom__btn__list__li__a btn btn-green">入学のお問い合わせ</a></li>
-                        <li><a href="/freetrial" class="main__bottom__btn__list__li__a btn btn-orange">無料体験に申し込む</a></li>
-                        <li><a href="/request" class="main__bottom__btn__list__li__a btn btn-bluegreen">資料請求する</a></li>
+<body>
+    <header id="header" class="header">
+        <div class="header__inner">
+            <div class="header__container">
+                <h1 class="header__logo Poppins bold">
+                    <a href="/">Kira-Kira Juku</a>
+                </h1>
+                <!-- ハンバーガーボタン -->
+                <button type="button" class="hamburger__button">
+                    <i class="bi bi-list"></i>
+                </button>
+                <!-- ナビゲーション、ヘッダーメニュー -->
+                <nav class="hamburger__menu header__nav">
+                    <ul class="hamburger__menu__list__group header__nav__list__group">
+                        <li><a href="#reason"><i class="bi bi-arrow-right-short"></i>選ばれる3つの理由</a></li>
+                        <li><a href="#course"><i class="bi bi-arrow-right-short"></i>コース・目的</a></li>
+                        <li><a href="#fee"><i class="bi bi-arrow-right-short"></i>費&nbsp;用</a></li>
                     </ul>
-                </div>
-            </section>
-            <!-- 理由 -->
-            <section id="reason" class="reason">
-                <div class="reason__container container">
-                    <div class="reason__title">
-                        <h3 class="title bold">選ばれる<span class="Roppins pink bold">3</span>つの理由</h3>
-                    </div>
-                    <div class="reason__list__wrapper">
-                        <div class="reason__list__item">
-                            <div class="reason__list__item__img">
-                                <img class="sp" src="./assets/image/reason/pht_reason01_sp.jpg" alt="生徒と女性講師の画像_sp用">
-                                <img class="pc" src="./assets/image/reason/pht_reason01_pc.jpg" alt="生徒と女性講師の画像_pc用">
-                            </div>
-                            <div class="reason__list__item__contents">
-                                <p class="reason__list__item__contents__number Poppins bold italic pink">Point<span>1</span>
-                                </p>
-                                <h4 class="reason__list__item__contents__title bold">実績のある講師陣だから安心</h4>
-                                <p class="reason__list__item__contents__text">
-                                    テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                                </p>
-                            </div>
-                        </div>
-                        <div class="reason__list__item">
-                            <div class="reason__list__item__img">
-                                <img class="sp" src="./assets/image/reason/pht_reason02_sp.jpg" alt="PCに向かう生徒の画像_sp用">
-                                <img class="pc" src="./assets/image/reason/pht_reason02_pc.jpg" alt="PCに向かう生徒の画像_pc用">
-                            </div>
-                            <div class="reason__list__item__contents">
-                                <p class="reason__list__item__contents__number Poppins bold italic pink">Point<span>2</span>
-                                </p>
-                                <h4 class="reason__list__item__contents__title bold">オンラインにも対応だから、早送り巻き戻し視聴できる。</h4>
-                                <p class="reason__list__item__contents__text">
-                                    テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                                </p>
-                            </div>
-                        </div>
-                        <div class="reason__list__item">
-                            <div class="reason__list__item__img">
-                                <img class="sp" src="./assets/image/reason/pht_reason03_sp.jpg" alt="生徒と男性講師の画像_sp用">
-                                <img class="pc" src="./assets/image/reason/pht_reason03_pc.jpg" alt="生徒と男性講師の画像_pc用">
-                            </div>
-                            <div class="reason__list__item__contents">
-                                <p class="reason__list__item__contents__number Poppins bold italic pink">Point<span>3</span>
-                                </p>
-                                <h4 class="reason__list__item__contents__title bold">徹底した個別指導で、弱点を残さずそれぞれに合わせた大学受験対策。</h4>
-                                <p class="reason__list__item__contents__text">
-                                    テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- 入学説明会申し込み -->
-            <section class="entry">
-                <div class="entry__container">
-                    <div class="entry__text">入学ご検討の方は、まずは入学説明会に<br>お越しください</div>
-                    <a href="/entry.html" class="btn entry__btn btn-blue-gradient">入学説明会に申し込む</a>
-                </div>
-            </section>
-            <!-- コース・目的 -->
-            <section id="course" class="course">
-                <div class="course__container container">
-                    <div class="course__title">
-                        <h3 class="title">コース・目的</h3>
-                    </div>
-                    <!-- タブのタイトル -->
-                    <div id="smarttab" class="tab">
-                        <ul class="nav course__tabTitle__wrapper">
-                            <li><a class="nav-link bold" href="#tab-1">学年別から選ぶ</a></li>
-                            <li><a class="nav-link bold" href="#tab-2">目的別から選ぶ</a></li>
-                        </ul>
-                        <!-- タブのコンテンツ -->
-                        <div class="tab-content tab__content__wrapper">
-                            <div id="tab-1" class="tab-pane" role="tabpanel">
-                                <div class="course__list__item">
-                                    <a href="#">
-                                        <picture class="course__list__item__img hover-expand">
-                                            <source media="(min-width: 768px)"
-                                                srcset="./assets/image/course/pht_course01_pc.jpg">
-                                            <img src="./assets/image/course/pht_course01_sp.jpg"  alt="高卒生の画像">
-                                        </picture>
-                                    </a>
-                                    <h4 class="course__list__item__contents__title"><i class="bi bi-arrow-right-short"></i>高卒生</h4>
-                                </div>
-                                <div class="course__list__item">
-                                    <a href="#">
-                                        <picture class="course__list__item__img hover-expand">
-                                            <source media="(min-width: 768px)"
-                                                srcset="./assets/image/course/pht_course02_pc.jpg">
-                                            <img src="./assets/image/course/pht_course02_sp.jpg" alt="高校3年生の画像">
-                                        </picture>
-                                    </a>
-                                    <h4 class="course__list__item__contents__title"><i class="bi bi-arrow-right-short"></i>高校3年生</h4>
-                                </div>
-                                <div class="course__list__item">
-                                    <a href="#">
-                                        <picture class="course__list__item__img hover-expand">
-                                            <source media="(min-width: 768px)"
-                                                srcset="./assets/image/course/pht_course03_pc.jpg">
-                                            <img src="./assets/image/course/pht_course03_sp.jpg" alt="高校2年生の画像">
-                                        </picture>
-                                    </a>
-                                    <h4 class="course__list__item__contents__title"><i class="bi bi-arrow-right-short"></i>高校2年生</h4>
-                                </div>
-                                <div class="course__list__item">
-                                    <a href="#">
-                                        <picture class="course__list__item__img hover-expand">
-                                            <source media="(min-width: 768px)"
-                                                srcset="./assets/image/course/pht_course04_pc.jpg">
-                                            <img src="./assets/image/course/pht_course04_sp.jpg" alt="高校1年生の画像用">
-                                        </picture>
-                                    </a>
-                                    <h4 class="course__list__item__contents__title"><i class="bi bi-arrow-right-short"></i>高校1年生</h4>
-                                </div>
-                            </div>
-                            <div id="tab-2" class="tab-pane" role="tabpanel">
-                                <div class="course__list__item">
-                                    <a href="#">
-                                        <picture class="course__list__item__img  hover-expand">
-                                            <source media="(min-width: 768px)"
-                                                srcset="./assets/image/course/pht_purpose01_pc.jpg">
-                                            <img src="./assets/image/course/pht_purpose01_sp.jpg" alt="赤門の画像">
-                                        </picture>
-                                    </a>
-                                    <h4 class="course__list__item__contents__title"><i class="bi bi-arrow-right-short"></i>難関大学・医学部合格を目指す</h4>
-                                </div>
-                                <div class="course__list__item">
-                                    <a href="#">
-                                        <picture class="course__list__item__img hover-expand">
-                                            <source media="(min-width: 768px)"
-                                                srcset="./assets/image/course/pht_purpose02_pc.jpg">
-                                            <img src="./assets/image/course/pht_purpose02_sp.jpg" alt="早稲田大学の画像">
-                                        </picture>
-                                    </a>
-                                    <h4 class="course__list__item__contents__title"><i class="bi bi-arrow-right-short"></i>名門私立大学合格を目指す</h4>
-                                </div>
-                                <div class="course__list__item">
-                                    <a href="#">
-                                        <picture class="course__list__item__img hover-expand">
-                                            <source media="(min-width: 768px)"
-                                                srcset="./assets/image/course/pht_purpose03_pc.jpg">
-                                            <img src="./assets/image/course/pht_purpose03_sp.jpg" alt="国公立大学の画像">
-                                        </picture>
-                                    </a>
-                                    <h4 class="course__list__item__contents__title"><i class="bi bi-arrow-right-short"></i>国公立大学合格を目指す</h4>
-                                </div>
-                                <div class="course__list__item">
-                                    <a href="#">
-                                        <picture class="course__list__item__img hover-expand">
-                                            <source media="(min-width: 768px)"
-                                                srcset="./assets/image/course/pht_purpose04_pc.jpg">
-                                            <img src="./assets/image/course/pht_purpose04_sp.jpg" alt="海外の大学内の画像">
-                                        </picture>
-                                    </a>
-                                    <h4 class="course__list__item__contents__title"><i class="bi bi-arrow-right-short"></i>海外の大学合格を目指す</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- 入学説明会申し込み -->
-            <section class="entry">
-                <div class="entry__container">
-                    <div class="entry__text">入学ご検討の方は、まずは入学説明会に<br>お越しください</div>
-                    <a href="/entry.html" class="btn entry__btn btn-blue-gradient">入学説明会に申し込む</a>
-                </div>
-            </section>
-            <!-- 費用 -->
-            <section id="fee" class="fee">
-                <h3 class="title fee__title">費用</h3>
-                <div class="fee__table__container">
-                    <table class="fee__table table_layout">
-                        <tr>
-                            <th class="fee__table_left">年間講数</th>
-                            <th>年間授業料（税込み）</th>
-                        </tr>
-                        <tr>
-                            <td class="fee__table_left">5講</td>
-                            <td class="fee__table_fee">24,500</td>
-                        </tr>
-                        <tr>
-                            <td class="fee__table_left">10講</td>
-                            <td class="fee__table_fee">49,000</td>
-                        </tr>
-                        <tr>
-                            <td class="fee__table_left">11講</td>
-                            <td class="fee__table_fee">53,900</td>
-                        </tr>
-                        <tr>
-                            <td class="fee__table_left">12講</td>
-                            <td class="fee__table_fee">58,800</td>
-                        </tr>
-                        <tr>
-                            <td class="fee__table_left">22講</td>
-                            <td class="fee__table_fee">107,800</td>
-                        </tr>
-                        <tr>
-                            <td class="fee__table_left">24講</td>
-                            <td class="fee__table_fee bold pink">117,600</td>
-                        </tr>
-
-                    </table>
-                </div>
-            </section>
-            <!-- 入学説明会申し込み -->
-            <section class="entry">
-                <div class="entry__container">
-                    <div class="entry__text">入学ご検討の方は、まずは入学説明会に<br>お越しください</div>
-                    <a href="/entry.html" class="btn entry__btn btn-blue-gradient">入学説明会に申し込む</a>
-                </div>
-            </section>
-            <section class="support support__wrapper">
-                <div class="support__faq">
-                    <div class="support__faq__container container">
-                        <p class="support__faq__text support__text">よくあるご質問</p>
-                    </div>
-                </div>
-                <div class="support__search">
-                    <div class="support__search__container container">
-                        <p class="support__search__text support__text">お近くの教室を探す</p>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <footer class="footer">
-            <div>
-                <small class="Poppins">copyright© 2023 Kira-Kira Juku All Rights Reserved.</small>
+                    <a href="/entry.html" class="btn entry__btn_hamburger btn-white">入学説明会に申し込む</a>
+                    <a href="/entry.html" class="btn entry__btn-nav btn-blue-gradient">入学説明会に申し込む</a>
+                </nav>
             </div>
-        </footer>
+        </div>
+    </header>
+    <main>
+        <!-- メインビジュアル -->
+        <section class="mainvisual">
+            <!-- カバー画像 -->
+            <div class="mainvisual__cover">
+                <!-- メインビジュアルのテキスト -->
+                <div class="mainvisual__container">
+                    <!-- メインビジュアル内コンテンツ -->
+                    <div class="mainvisual__contents">
+                        <div class="mainvisual__contents_logo">
+                            <div class="mainvisual__contents_logo-left"></div>
+                            <div class="mainvisual__contents_logo_catch">
+                                <div class="mainvisual__contents_logo_catch_top">難関大学の合格実績</div>
+                                <div class="mainvisual__contents_logo_catch_bottom Poppins extrabold italic pink">
+                                    No.<span>1</span></div>
+                            </div>
+                            <div class="mainvisual__contents_logo-right"></div>
+                        </div>
+                        <div class="mainvisual__title">
+                            <h2 class="mainvisual__title_top">現役高校生・高卒生</h2>
+                            <h2 class="mainvisual__title_bottom">入学説明会の<br>お申し込み開始</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ボタン３種 -->
+            <div class="main__bottom__btn__container container">
+                <ul class="main__bottom__btn__list">
+                    <li><a href="/inquiry" class="main__bottom__btn__list__li__a btn btn-green">入学のお問い合わせ</a></li>
+                    <li><a href="/freetrial" class="main__bottom__btn__list__li__a btn btn-orange">無料体験に申し込む</a></li>
+                    <li><a href="/request" class="main__bottom__btn__list__li__a btn btn-bluegreen">資料請求する</a></li>
+                </ul>
+            </div>
+        </section>
+        <!-- 理由 -->
+        <section id="reason" class="reason">
+            <div class="reason__container container">
+                <div class="reason__title">
+                    <h3 class="title bold">選ばれる<span class="Poppins pink bold">3</span>つの理由</h3>
+                </div>
+                <div class="reason__list__wrapper">
+                    <div class="reason__list__item">
+                        <div class="reason__list__item__img">
+                            <img class="sp" src="./assets/image/reason/pht_reason01_sp.jpg" alt="生徒に寄り添って指導する女性講師">
+                            <img class="pc" src="./assets/image/reason/pht_reason01_pc.jpg" alt="生徒に寄り添って指導する女性講師">
+                        </div>
+                        <div class="reason__list__item__contents">
+                            <p class="reason__list__item__contents__number Poppins bold italic pink">Point<span>1</span>
+                            </p>
+                            <h4 class="reason__list__item__contents__title bold">実績のある講師陣だから安心</h4>
+                            <p class="reason__list__item__contents__text">
+                                テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="reason__list__item">
+                        <div class="reason__list__item__img">
+                            <img class="sp" src="./assets/image/reason/pht_reason02_sp.jpg" alt="オンライン学習をする生徒">
+                            <img class="pc" src="./assets/image/reason/pht_reason02_pc.jpg" alt="オンライン学習をする生徒">
+                        </div>
+                        <div class="reason__list__item__contents">
+                            <p class="reason__list__item__contents__number Poppins bold italic pink">Point<span>2</span>
+                            </p>
+                            <h4 class="reason__list__item__contents__title bold">オンラインにも対応だから、早送り巻き戻し視聴できる。</h4>
+                            <p class="reason__list__item__contents__text">
+                                テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="reason__list__item">
+                        <div class="reason__list__item__img">
+                            <img class="sp" src="./assets/image/reason/pht_reason03_sp.jpg" alt="個別指導中の講師と生徒">
+                            <img class="pc" src="./assets/image/reason/pht_reason03_pc.jpg" alt="個別指導中の講師と生徒">
+                        </div>
+                        <div class="reason__list__item__contents">
+                            <p class="reason__list__item__contents__number Poppins bold italic pink">Point<span>3</span>
+                            </p>
+                            <h4 class="reason__list__item__contents__title bold">徹底した個別指導で、弱点を残さずそれぞれに合わせた大学受験対策。</h4>
+                            <p class="reason__list__item__contents__text">
+                                テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 入学説明会申し込み -->
+        <section class="entry">
+            <div class="entry__container">
+                <div class="entry__text">入学ご検討の方は、まずは入学説明会に<br>お越しください</div>
+                <a href="/entry.html" class="btn entry__btn btn-blue-gradient">入学説明会に申し込む</a>
+            </div>
+        </section>
+        <!-- コース・目的 -->
+        <section id="course" class="course">
+            <div class="course__container container">
+                <div class="course__title">
+                    <h3 class="title">コース・目的</h3>
+                </div>
+                <!-- タブのタイトル -->
+                <div id="smarttab" class="tab">
+                    <ul class="nav course__tabTitle__wrapper">
+                        <li><a class="nav-link nav-link-left bold" href="#tab-1">学年別から選ぶ</a></li>
+                        <li><a class="nav-link nav-link-right bold" href="#tab-2">目的別から選ぶ</a></li>
+                    </ul>
+                    <!-- タブのコンテンツ -->
+                    <div class="tab-content tab__content__wrapper">
+                        <div id="tab-1" class="tab-pane" role="tabpanel">
+                            <div class="course__list__item">
+                                <a href="#">
+                                    <picture class="course__list__item__img hover-expand">
+                                        <source media="(min-width: 768px)"
+                                            srcset="./assets/image/course/pht_course01_pc.jpg">
+                                        <img src="./assets/image/course/pht_course01_sp.jpg" alt="">
+                                    </picture>
+                                </a>
+                                <h4 class="course__list__item__contents__title"><i
+                                        class="bi bi-arrow-right-short"></i>高卒生</h4>
+                            </div>
+                            <div class="course__list__item">
+                                <a href="#">
+                                    <picture class="course__list__item__img hover-expand">
+                                        <source media="(min-width: 768px)"
+                                            srcset="./assets/image/course/pht_course02_pc.jpg">
+                                        <img src="./assets/image/course/pht_course02_sp.jpg" alt="">
+                                    </picture>
+                                </a>
+                                <h4 class="course__list__item__contents__title"><i
+                                        class="bi bi-arrow-right-short"></i>高校3年生</h4>
+                            </div>
+                            <div class="course__list__item">
+                                <a href="#">
+                                    <picture class="course__list__item__img hover-expand">
+                                        <source media="(min-width: 768px)"
+                                            srcset="./assets/image/course/pht_course03_pc.jpg">
+                                        <img src="./assets/image/course/pht_course03_sp.jpg" alt="">
+                                    </picture>
+                                </a>
+                                <h4 class="course__list__item__contents__title"><i
+                                        class="bi bi-arrow-right-short"></i>高校2年生</h4>
+                            </div>
+                            <div class="course__list__item">
+                                <a href="#">
+                                    <picture class="course__list__item__img hover-expand">
+                                        <source media="(min-width: 768px)"
+                                            srcset="./assets/image/course/pht_course04_pc.jpg">
+                                        <img src="./assets/image/course/pht_course04_sp.jpg" alt="">
+                                    </picture>
+                                </a>
+                                <h4 class="course__list__item__contents__title"><i
+                                        class="bi bi-arrow-right-short"></i>高校1年生</h4>
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab-pane" role="tabpanel">
+                            <div class="course__list__item">
+                                <a href="#">
+                                    <picture class="course__list__item__img  hover-expand">
+                                        <source media="(min-width: 768px)"
+                                            srcset="./assets/image/course/pht_purpose01_pc.jpg">
+                                        <img src="./assets/image/course/pht_purpose01_sp.jpg" alt="">
+                                    </picture>
+                                </a>
+                                <h4 class="course__list__item__contents__title"><i
+                                        class="bi bi-arrow-right-short"></i>難関大学・医学部合格を目指す</h4>
+                            </div>
+                            <div class="course__list__item">
+                                <a href="#">
+                                    <picture class="course__list__item__img hover-expand">
+                                        <source media="(min-width: 768px)"
+                                            srcset="./assets/image/course/pht_purpose02_pc.jpg">
+                                        <img src="./assets/image/course/pht_purpose02_sp.jpg" alt="">
+                                    </picture>
+                                </a>
+                                <h4 class="course__list__item__contents__title"><i
+                                        class="bi bi-arrow-right-short"></i>名門私立大学合格を目指す</h4>
+                            </div>
+                            <div class="course__list__item">
+                                <a href="#">
+                                    <picture class="course__list__item__img hover-expand">
+                                        <source media="(min-width: 768px)"
+                                            srcset="./assets/image/course/pht_purpose03_pc.jpg">
+                                        <img src="./assets/image/course/pht_purpose03_sp.jpg" alt="">
+                                    </picture>
+                                </a>
+                                <h4 class="course__list__item__contents__title"><i
+                                        class="bi bi-arrow-right-short"></i>国公立大学合格を目指す</h4>
+                            </div>
+                            <div class="course__list__item">
+                                <a href="#">
+                                    <picture class="course__list__item__img hover-expand">
+                                        <source media="(min-width: 768px)"
+                                            srcset="./assets/image/course/pht_purpose04_pc.jpg">
+                                        <img src="./assets/image/course/pht_purpose04_sp.jpg" alt="">
+                                    </picture>
+                                </a>
+                                <h4 class="course__list__item__contents__title"><i
+                                        class="bi bi-arrow-right-short"></i>海外の大学合格を目指す</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 入学説明会申し込み -->
+        <section class="entry">
+            <div class="entry__container">
+                <div class="entry__text">入学ご検討の方は、まずは入学説明会に<br>お越しください</div>
+                <a href="/entry.html" class="btn entry__btn btn-blue-gradient">入学説明会に申し込む</a>
+            </div>
+        </section>
+        <!-- 費用 -->
+        <section id="fee" class="fee">
+            <h3 class="title fee__title">費用</h3>
+            <div class="fee__table__container">
+                <table class="fee__table table_layout">
+                    <tr>
+                        <th class="fee__table_left">年間講数</th>
+                        <th>年間授業料（税込み）</th>
+                    </tr>
+                    <tr>
+                        <td class="fee__table_left">5講</td>
+                        <td class="fee__table_fee">24,500</td>
+                    </tr>
+                    <tr>
+                        <td class="fee__table_left">10講</td>
+                        <td class="fee__table_fee">49,000</td>
+                    </tr>
+                    <tr>
+                        <td class="fee__table_left">11講</td>
+                        <td class="fee__table_fee">53,900</td>
+                    </tr>
+                    <tr>
+                        <td class="fee__table_left">12講</td>
+                        <td class="fee__table_fee">58,800</td>
+                    </tr>
+                    <tr>
+                        <td class="fee__table_left">22講</td>
+                        <td class="fee__table_fee">107,800</td>
+                    </tr>
+                    <tr>
+                        <td class="fee__table_left">24講</td>
+                        <td class="fee__table_fee bold pink">117,600</td>
+                    </tr>
 
-        <!-- jQuery -->
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <!-- Smart Tab -->
-        <script src="https://cdn.jsdelivr.net/npm/jquery-smarttab@4/dist/js/jquery.smartTab.min.js"></script>
-        <script src="assets/script/main.js"></script>
-    </body>
+                </table>
+            </div>
+        </section>
+        <!-- 入学説明会申し込み -->
+        <section class="entry">
+            <div class="entry__container">
+                <div class="entry__text">入学ご検討の方は、まずは入学説明会に<br>お越しください</div>
+                <a href="/entry.html" class="btn entry__btn btn-blue-gradient">入学説明会に申し込む</a>
+            </div>
+        </section>
+        <section class="support support__wrapper">
+            <div class="support__faq">
+                <a href="#" class="support__faq__container container">
+                    <p class="support__faq__text support__text">よくあるご質問</p>
+                </a>
+            </div>
+            <div class="support__search">
+                <a href="#" class="support__search__container container">
+                    <p class="support__search__text support__text">お近くの教室を探す</p>
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__inner">
+            <small class="Poppins">copyright© 2023 Kira-Kira Juku All Rights Reserved.</small>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Smart Tab -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-smarttab@4/dist/js/jquery.smartTab.min.js"></script>
+    <script src="assets/script/main.js"></script>
+</body>
+
 </html>

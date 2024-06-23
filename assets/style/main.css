@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* ベースのスタイル
------------------------------------------- */
+------------------------------------------*/
 body {
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: 400;
@@ -101,9 +101,6 @@ ul {
         transition: transform 0.3s ease;
 
     }
-    .btn:hover {
-        opacity: .8;
-    }
 }
 .btn-white {
     color: #005BAC;
@@ -125,6 +122,21 @@ ul {
 }
 .btn-bluegreen {
     background-color: #3AC8AD;
+}
+
+@media (min-width: 768px) {
+    .btn-blue-gradient:hover {
+        background-image: linear-gradient(90deg, #64a0dc 0%, #c2daf3 100%);
+    }
+    .btn-green:hover {
+        background-color: #9cd66d;
+    }
+    .btn-orange:hover {
+        background-color: #f6be46;
+    }
+    .btn-bluegreen:hover {
+        background-color: #6dc9b8;
+    }
 }
 
 .title {
@@ -367,7 +379,6 @@ h4.title {
 }
 @media (min-width: 768px) {
     .mainvisual__cover {
-        /* position: relative; */
         width: 100%;
         background-color: #fff;
         height: 40.6875rem;
@@ -380,9 +391,13 @@ h4.title {
     top: 0;
     width: 100%;
     padding-top: 2rem;
-    /* padding-left: 1rem; */
 }
-
+@media (min-width: 500px) {
+    .mainvisual__container {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
 @media (min-width: 768px) {
     .mainvisual__container {
         padding-top: 7rem;
@@ -393,6 +408,7 @@ h4.title {
 @media (min-width: 1100px) {
     .mainvisual__container {
         width: 57%;
+        padding-left: 0;
     }
 }
 
@@ -440,7 +456,7 @@ h4.title {
     .mainvisual__contents_logo-left,
     .mainvisual__contents_logo-right {
         width: 52.6px;
-        height: 150px;
+        height: 9.375rem;
     }
 }
 
@@ -448,8 +464,7 @@ h4.title {
     font-size: 0.6875rem;
     font-weight: 700;
     color: #333;
-    /* line-height: 2; */
-    margin-bottom: .3rem;
+    margin-bottom: .5rem;
 }
 .mainvisual__contents_logo_catch_bottom {
     font-size: 1.125rem;
@@ -479,27 +494,24 @@ h4.title {
 }
 .mainvisual__title_top {
     color: #333;
-    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height:1.5;
 }
 .mainvisual__title_bottom {
+    font-size: 1.5625rem;
     font-weight: 900;
-    line-height: 1.5;
-    letter-spacing: .1rem;
+    line-height: 1.45;
+}
 
-}
-@media (min-width: 768px) {
-    .mainvisual__title_bottom {
-        font-size: 25px;
-        font-weight: 900;
-        line-height: 1.44;
-    }
-}
 @media (min-width: 768px) {
     .mainvisual__title_top {
         font-size: 2.0625rem;
     }
     .mainvisual__title_bottom {
         font-size: 3.75rem;
+        line-height: 1.44;
+        letter-spacing: 0;
     }
 }
 
@@ -530,7 +542,7 @@ h4.title {
         display: flex;
         justify-content: space-around;
         padding-top: 0;
-        margin: 0 2rem 0;
+        margin: 0 0.7rem 0;
     }
 }
 @media (min-width: 768px) {
@@ -568,18 +580,16 @@ h4.title {
 }
 @media (min-width: 768px) {
     .reason__title .title {
-        font-size: 2rem;
-        letter-spacing: .25rem;
+        font-size: 2.25rem;
     }
     .reason__title span {
-        font-size: 3rem;
+        font-size: 3.375rem;
     }
 }
 
 /* リスト */
 @media (min-width: 768px) {
     .reason__list__wrapper {
-        /* max-width: 100vw; */
         margin: 0 auto 4rem;
         text-align: center;
     }
@@ -703,6 +713,7 @@ h4.title {
 @media (min-width: 768px) {
     .entry__text {
         margin-bottom : 1rem;
+        letter-spacing: -.1rem;
     }
     .entry__text br {
         display: none;
@@ -733,7 +744,7 @@ h4.title {
 }
 @media (min-width: 768px) {
     .course__container {
-        margin-bottom: 5.5rem;
+        margin-bottom: 4.2rem;
     }
 }
 
@@ -745,9 +756,9 @@ h4.title {
 /* スマートタブ */
 .st>.nav {
     flex-direction: row!important;
-    flex: 1 auto;
-    display: flex;
-    justify-content: space-between;
+    /* flex: 1 auto; */
+    /* display: flex; */
+    /* justify-content: space-between;  */
 }
 
 /* タブ周りの線を削除 */
@@ -762,19 +773,18 @@ h4.title {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 1.5rem;
 }
 
 @media (min-width: 768px) {
     .nav.course__tabTitle__wrapper {
         width: 72.5rem;
-        max-width: 72.5rem;
+        max-width: 1160px;
     }
 }
 @media (max-width: 1160px) {
     .nav.course__tabTitle__wrapper {
-        width: 100%; /* タブの幅を100%に設定 */
-        box-sizing: border-box; /* パディングとボーダーを含む全体の幅を100%に設定 */
+        box-sizing: border-box; 
+        max-width: 100vw;
     }
 }
 /* 選択していないタブ..下のボックスシャドウを無効にする */
@@ -800,14 +810,12 @@ h4.title {
         width: 100%;
         max-width: 1160px;
         margin: 0 auto;
+        border-radius: 0.75rem 0.75rem 0px 0px ;
+        font-size: 1.5rem;
+        font-weight: 700;
     }
 }
 
-@media (min-width: 768px) {
-    .st-theme-basic>.nav .nav-link {
-        border-radius: 0.75rem 0.75rem 0px 0px ;
-    }
-}
 /* 選択中タブ */
 .st-theme-basic>.nav .nav-link.active {
     background-color: #F2F9FF;
@@ -821,12 +829,18 @@ h4.title {
 
 .st.st-justified>.nav .nav-link, .st.st-justified>.nav>li {
     width: 100%;
-    margin: 0 0.625rem 0 0;
+    width: calc(100% - 1rem);
 }
+
 @media (min-width: 768px) {
-    .st.st-justified>.nav .nav-link, .st.st-justified>.nav>li {
-        margin: 0;
-        width: 98%;
+    .st.st-justified>.nav .nav-link {
+        width: calc(100% - 1.5rem);
+    }
+    .st.st-justified>.nav .nav-link-left {
+        margin : 0 auto 0 0;
+    }
+    .st.st-justified>.nav .nav-link-right {
+        margin : 0 0 0 auto;
     }
 }
 
@@ -835,12 +849,10 @@ h4.title {
 .tab__content__wrapper {
     padding: 0 1rem;
     overflow:hidden;
-
 }
 .course__list__item img {
     display: block;
-    overflow:hidden;
-
+    overflow: hidden;
 }
 
 .tab-content {
@@ -849,7 +861,6 @@ h4.title {
     border-left: none;
     background-color: #F2F9FF;
     height: auto !important;
-    overflow:hidden;
 }
 
 .st>.tab-content>.tab-pane {
@@ -857,7 +868,7 @@ h4.title {
     row-gap: 1.4rem;
 }
 .tab.st-theme-basic > .tab-content > .tab-pane {
-        padding: 0 !important;
+        padding: 1.6875rem 0 0 !important;
 }
 
 @media (min-width: 768px) {
@@ -866,67 +877,91 @@ h4.title {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
-        row-gap: 1rem;
-        margin-top: 2rem;
+        row-gap: 1.75rem;
+        padding-bottom: 1.75rem !important;
     }
 }
 
+@media screen and (min-width: 768px) {
+    .st>.tab-content {
+        border-bottom-left-radius: 0.75rem;
+        border-bottom-right-radius: 0.75rem;
+    }
+}
 .tab-pane {
     overflow: hidden;
 }
 
-.course__list__item:first-child {
-    padding-top: 2rem;
+.course__list__item + .course__list__item {
+    margin-top: 2rem;
 }
 
-.course__list__item {
-    padding-top: 0;
-    margin-top: 0;
-    margin-bottom: 1.5rem;
-}
 .course__list__item:last-child {
-    margin-bottom: 0;
+    margin-bottom: 3.75rem;
+    padding-bottom: 0;
+
+}
+.course__list__item a img {
+    vertical-align: bottom;
+}
+
+@media (min-width: 768px) {
+
+    .tab-pane > .course__list__item {
+        margin-top: 1rem;
+        width: 50%;
+        margin-top: 1rem;
+        padding: 0 1rem;
+        padding-bottom: 0;
+    }
+@media (min-width: 768px) {
+        .course__list__item:last-child {
+            margin-bottom: .5rem;
+        }
 }
 
 .course__list__item a {
     display: block;
     overflow: hidden;
+    border-radius: .6rem;
+} 
+.course__list__item>a img {
+    transition: transform 0.3s ease;
 }
-
-@media (min-width: 768px) {
-
-    .course__list__item {
-        width: 50%;
-        padding: 0 1rem;
-        padding-bottom: 0;
-        transition: opacity 0.3s ease;
-        overflow: hidden;
-    }
-    .course__list__item:first-child {
-        padding-top: 0;
-    }
-
-    .course__list__item:last-child {
-        padding-bottom: 10px;
-    }
-
-    .course__list__item>a:hover {
+.course__list__item>a img:hover {
             transform: scale(1.2);
             opacity: 0.6;
     }
 }
 
-.course__list__item__img img {
+.course__list__item__img a {
     padding-bottom: 0.55rem;
 }
 
 .course__list__item__contents__title {
     font-size: 1.25rem;
+    line-height: 1;
+    margin-top: .8rem;
+    text-align: left;
 }
+
 .course__list__item__contents__title i::before {
     color: #005BAC;
-    font-size: 1.625rem;
-    vertical-align: middle;
+    font-size: 1.75rem;
+    vertical-align: bottom;
+    height: 1.5rem;
+    display: inline-block;
+    margin-left: -.5rem;
+}
+@media (min-width: 768px) {
+    .course__list__item__contents__title {
+        margin-top: 1rem;
+    }
+    .course__list__item__contents__title i::before {
+        font-size: 2.25rem;
+        line-height: 1rem;
+        vertical-align: middle;
+    }
 }
 
 /* 費用
@@ -938,46 +973,49 @@ h4.title {
 }
 @media (min-width: 768px) {
     .fee {
-        margin-bottom: 4.5rem;
+        margin-bottom: 4rem;
     }
 }
 /*費用タイトル*/
 .fee__title {
-    margin-top: 4rem;
-    margin-bottom: 1rem;
+    margin-top: 3.75rem;
     letter-spacing: 1rem;
     font-size: 1.75rem;
     color: #333;
 }
 
-/* 費用表 */
+/* 費用表*/
 .fee__table {
-    margin: 0 auto;
+    margin: 0.9375rem auto;
     border-collapse: collapse;
-    border: 2px #777 solid;
+    border: 0.1875rem #ccc solid;
     width: calc(100% - 2rem);
     text-align: center;
-    font-size: 16px;
+    font-size: 1rem;
 }
 @media (min-width: 768px) {
     .fee__table {
         width: 37.5rem;
-        font-size: 18px;
+        font-size: 1.125rem;
     }
 }
 
 /* 表タイトル行 */
 .fee__table th,
 .fee__table td {
-    border: .08rem #777 solid;
+    border: 0.1rem #ccc solid;
 }
 .fee__table th {
-    background: #f0f0f0;
-    padding: 19px 1.0625rem;
+    background: #F5F5F5;
+    padding: 1.1875rem 1.0625rem;
     font-weight: 400;
 }
 .fee__table td {
-    padding: 7px 0 ;
+    padding: 0.4375rem 0 ;
+}
+
+.fee__table_left {
+    width: 7.25rem;
 }
 
 @media (min-width: 768px) {
@@ -986,13 +1024,12 @@ h4.title {
         font-size: 1.125rem;
     }
     .fee__table td {
-        padding: 0.625rem 0 ;
+        padding: .7rem 0 ;
     }
     .fee__table_left {
         width: 9.0625rem;
     }
 }
-
     .fee__table td {
         background-color: #fff;
     }
@@ -1041,7 +1078,6 @@ h4.title {
 }
 .support__faq {
     background-image: url(../image/support/pht_faq_sp.jpg);
-    background-color: #0271E0;
 }
 .support__search {
     background-image: url(../image/support/pht_classrooms_sp.jpg);
@@ -1095,8 +1131,15 @@ h4.title {
     background-color: #DDD;
     color: #333;
     height: 5.125rem;
-    padding: 2rem 1rem;
+    line-height: 5.125rem;
     text-align: center;
+    align-content: center;
+}
+.footer__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 @media (min-width: 768px) {
